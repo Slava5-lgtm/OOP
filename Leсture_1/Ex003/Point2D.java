@@ -1,0 +1,64 @@
+package Leсture_1.Ex003;
+
+/**
+ * Это точка 2D
+ */
+public class Point2D {
+    private int x, y; // Это координата х и у
+
+    /**
+     * Это конструктор ...
+     * 
+     * @param valueX это координата Х
+     * @param valueY это координата Y
+     */
+    public Point2D(int valueX, int valueY) { // после создание 14 15 строчки возврощяемся в Клиенский код т.е. Program
+        x = valueX;
+        y = valueY;
+    }
+    
+    /** Обрашения к единой единицы */
+    public Point2D(int value) {
+        this(value, value); // Обрашения к единой единицы
+    }
+
+    public Point2D() {
+        this(0);
+    }
+
+    /** Метод возврощяет координату х */
+    public int getX() {
+        return x; // Метод возврощяет координату х
+    }
+
+    // ** Метод возврощяет координату у */
+    public int getY() {
+        return y; // Метод возврощяет координату у
+    }
+
+    public void setX(int value) {
+        this.x = value; // Изменяем координату х
+    }
+
+    public void setY(int value) {
+        this.y = value; // Изменяем координату х
+    }
+
+    private String getInfo() {
+        return String.format("x: %d; y: %d", x, y); // Для коректного ввывода
+    }
+
+    @Override //
+    public String toString() {
+        return getInfo();
+    }
+
+    public static double distance(Point2D a, Point2D b) {
+        return Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2));
+    }
+
+    // ctor
+    // get; set;
+    // docs
+    //    
+}
