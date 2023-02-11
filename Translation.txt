@@ -1,0 +1,5 @@
+Translation - перевод
+Lecture - Лекция
+Seminar - Семинар
+Instructions - Инструкция
+Example - Пример
