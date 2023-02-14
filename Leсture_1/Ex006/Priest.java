@@ -1,6 +1,7 @@
 package Leсture_1.Ex006;
 
-public class Prest {
+
+public class Priest extends BaseHero {
 
     // private int elixir;
     // private int maxElixir;
@@ -23,5 +24,8 @@ public class Prest {
 
     // public String getInfo() {
     //     return String.format("%s  Elixir: %d", super.getInfo(), this.elixir);
-    // }    
-}
+    // }
+} 
+
+
+
